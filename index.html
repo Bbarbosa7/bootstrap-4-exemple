@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Bootstrap</title>
+        <link rel="icon" href="img/bootstrap-social-logo.png" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Um exemplo <small>feito utilizando Bootstrap</small> </h1>
+            <p>Exemplo de teste.</p>
+
+            <div class="row">
+
+                <!-- Se uma coluna tiver o tamanho de suporte apenas para desktop, usa-se col-md -->
+                <!-- <div class="col-md-4">LOTEM 1</div>
+                <div class="col-md-4">LOTEM 2</div>
+                <div class="col-md-4">LOTEM 3</div> -->
+
+                <!-- Existe tbm a col-lg para monitores HD -->
+
+                <!-- No Bootstrap a subpropriedade "sm" se refere ao tamanho do tablet -->
+                <!-- <div class="col-sm-4">LOTEM 1</div>
+                <div class="col-sm-4">LOTEM 2</div>
+                <div class="col-sm-4">LOTEM 3</div> -->
+
+                <!-- No Bootstrap antes da versão 4 é usada a subpropriedade "xs" para se referir ao tamanho de smartphone
+                Após a versão 4 do Bootstrap usa-se apenas col-*(quantidade de colunas) -->
+                <div class="col-4">
+                    <h2>Menu</h2>
+
+                    <!-- O description list "dl" serve como um subistitudo ao lista não ordenada "ul" -->
+                    <dl>
+                        <!-- O titulo do item -->
+                        <dt>Café</dt>
+                        <!-- A descrição do item (opcional) -->
+                        <dd>- Néctar dos deuses</dd>
+
+                        <dt>Chá Mate</dt>
+                        <dd>- Bebida gostosa</dd>
+                        
+                        <dt>Chá de Camomila</dt>
+                        <dd>- Bebida relaxante</dd>
+
+                    </dl>
+
+                    <ul>
+                        <li>Itens</li>
+                        <li>Itens</li>
+                        <li>Itens</li>
+                        <li>Itens</li>
+                        <li>Itens</li>
+                        <li>Itens</li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <h2 class="text-center">Conteúdo</h2>
+                    <p>Esta é uma frase de <mark>teste</mark> usando a tag "mark" e "abbr" do <abbr title="O framework mais popular para front-end">Bootstrap.</abbr></p>
+
+                    <p>Para fazer uma citação no bootstrap use a tag <code>blockquote</code> e <code>footer</code>. Para essas citações usamos a tag < <code>code</code> >.</p>
+                    
+                    <p>Outra tag de marcação de código é a <kbd>< kbd ></kbd>.</p>
+
+                    <hr />
+                    <blockquote class="blockquote text-right">
+                        <p class="mb-0">
+                           "Capitão América: Fica grandão na armadura né. E sem ela o que você é?" <br />
+                            "Homem de Ferro: Gênio, bilionário, playboy, filantropo."
+                        </p>
+                        <footer class="blockquote-footer">
+                            <cite title="Os Vingadores">Os Vingadores.</cite>
+                        </footer>
+                    </blockquote>
+                    <hr />
+
+                    <pre>
+                        Esse pedaço foi
+                        escrito usando
+                        a tag < pre >... E o html respeita os espaços que você
+                        usar aqui dentro
+                    </pre>
+
+                    <p class="text-danger">Esse é um paragrafo com marcação estilizada.</p>
+                    <p class="bg-danger">Esse é um paragrafo com marcação estilizada.</p>
+                    <p class="bg-success">Esse é um paragrafo com marcação estilizada.</p>
+                    <p class="bg-info">Esse é um paragrafo com marcação estilizada.</p>
+                    <p class="bg-warning">Esse é um paragrafo com marcação estilizada.</p>
+                    <p class="bg-primary">Esse é um paragrafo com marcação estilizada.</p>
+
+                    <hr />
+
+                    <p>O bootstrap possui classes específicas que facilitam funções do CSS como "text-right", "center" e "left"</p>
+                    <p class="text-center">Este é um exemplo</p>
+
+                    <hr />
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Uso de tabela no Bootstrap -->
+                    <!-- https://getbootstrap.com.br/docs/4.1/content/tables/ -->
+                    <table class="table">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>Da Silva</td>
+                            <td>jose@teste.com</td>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>Da Silva</td>
+                            <td>jose@teste.com</td>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>Da Silva</td>
+                            <td>jose@teste.com</td>
+                        </tr>
+                    </table>
+
+                    <hr />
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Tratamento de imagens com Bootstrap -->
+                    <!-- https://getbootstrap.com/docs/4.0/content/images/ -->
+                    <img class="img-fluid rounded-circle" src="img/php-8.jpg" title="Wallpaper da melhor linguagem para programação web" />
+
+                    <hr />
+                    <br />
+                </div>
+            </div>               
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Botões no Bootstrap 4 -->
+                    <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+
+                    <button type="button" class="btn btn-link">Link</button>
+
+                    <hr />
+
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="button" value="Input">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+
+                    <hr />
+
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+                    <hr />
+
+                    <p>Aplicando grupo de botões:</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Exemplo A</button>
+                        <button type="button" class="btn btn-primary">Exemplo B</button>
+                        <button type="button" class="btn btn-primary">Exemplo C</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
